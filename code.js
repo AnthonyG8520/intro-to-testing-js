@@ -8,5 +8,5 @@ function double(num){
 }
 
 function sayHello(){
-    return
+    return ""
 }
