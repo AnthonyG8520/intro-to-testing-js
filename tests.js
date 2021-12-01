@@ -19,24 +19,24 @@ describe("sayHello", function() {
     it("should be a function", function () {
         expect(typeof sayHello).toBe("function");
     })
-    it("should return a string", function(){
+    it("should return a string", function () {
         expect(typeof sayHello()).toBe("string");
     })
-    it("should return the string Hello, Jane", function(){
+    it("should return the string Hello, Jane", function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     })
-    it("should return the string Hello, Alex!", function(){
+    it("should return the string Hello, Alex!", function () {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     })
-    it("should return the string Hello, pat!", function(){
+    it("should return the string Hello, pat!", function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
-    it("should return the string Hello, World!", function(){
+    it("should return the string Hello, World!", function () {
         expect(sayHello()).toBe("Hello, World!");
     })
-})
-
-
+    it("should return the string Hello, World!", function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    })
 
 
 //syntax:
@@ -47,21 +47,22 @@ describe("sayHello", function() {
 //});
 
 //Examples
-describe("double", function(){
-    it ("should return a number", function(){
-        expect(typeof double()).toBe("number")
+    describe("double", function () {
+        it("should return a number", function () {
+            expect(typeof double()).toBe("number")
+        })
     })
-})
 
 
-describe("double", function(){
-    it ("should be a function", function(){
-        expect(typeof double).toBe("function")
+    describe("double", function () {
+        it("should be a function", function () {
+            expect(typeof double).toBe("function")
+        })
     })
-})
 
-describe("double", function(){
-    it ("should return double", function(){
-        expect(double(5)).toEqual(10);
+    describe("double", function () {
+        it("should return double", function () {
+            expect(double(5)).toEqual(10);
+        })
     })
 })

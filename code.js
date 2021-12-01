@@ -6,17 +6,23 @@ const helloWorld = function() {
 function double(num){
     return num * 2;
 }
-
+//Previous attempts
 // function sayHello(input) {
 //     if (input !== "") {
 //         return "Hello, " + input + "!"
-//     }else if (typeof(input) === "undefined"){
+//     }else (typeof input === "undefined")
 //         return "Hello, World!"
-//     } else return "Hello"
+//
 // }
 
+// function sayHello(input){
+//   if (typeof input === "undefined")
+//     return "Hello, World!"
+// }
+//----------------
+
 function sayHello(input){
-    if (input === "undefined") {
+    if (typeof input === "undefined" || typeof input === "boolean"){
         return "Hello, World!"
-    }
+    }else return "Hello, " + input + "!"
 }
