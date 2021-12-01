@@ -14,15 +14,38 @@ describe('helloWorld', function() {
     });
 });
 
+//Exercise 1
 describe("sayHello", function(){
     it("should be a function", function(){
-        expect(typeof sayHello).toBe("function")
+        expect(typeof sayHello).toBe("function");
     })
 })
 
+//Exercise 2
 describe("sayHello", function(){
     it("should return a string", function(){
-        expect(typeof sayHello()).toBe("string")
+        expect(typeof sayHello()).toBe("string");
+    })
+})
+
+//Exercise 3
+describe("sayHello", function(){
+    it("should return the string Hello, Jane", function(){
+        expect(sayHello("")).toBe("Hello, Jane!");
+    })
+})
+
+//Exercise 4
+describe("sayHello", function(){
+    it("should return the string Hello, Alex!", function(){
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    })
+})
+
+//Exercise 5
+describe("sayHello", function(){
+    it("should return the string Hello, pat!", function(){
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
 })
 
