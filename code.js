@@ -7,8 +7,16 @@ function double(num){
     return num * 2;
 }
 
+// function sayHello(input) {
+//     if (input !== "") {
+//         return "Hello, " + input + "!"
+//     }else if (typeof(input) === "undefined"){
+//         return "Hello, World!"
+//     } else return "Hello"
+// }
+
 function sayHello(input){
-    if (input !== "") {
-        return "Hello, " + input + "!"
-    }else return "Hello, Jane!"
+    if (input === "undefined") {
+        return "Hello, World!"
+    }
 }
